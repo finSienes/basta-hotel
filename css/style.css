@@ -1,0 +1,28 @@
+.img-bg{
+    background-image: url('../img/bg1.jpg');
+    background-position: center;
+    opacity: 80%;
+    width: auto;
+    height: 70vh;
+    text-shadow: 1px 1px white;
+    color:black;
+}
+
+.date-bg{
+    background-color: grey;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.card{
+    width: 18rem;
+}
+
+.bg-2{
+    background-image: url('../img/pexels-james-wheeler-414612.jpg');
+    background-position: top center;
+    width: auto;
+    height: auto;
+    text-shadow: 1px 1px white;
+    color:black;
+}
