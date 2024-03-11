@@ -8,10 +8,9 @@ const rooms = [
       benefits: ["Free Wi-Fi", "Complimentary breakfast"],
       amenities: ["TV", "Air conditioning", "Mini fridge", "En-suite bathroom"],
       bookings: [
-        { date: "2024-03-05", booked: true },
-        { date: "2024-03-12", booked: true },
-        { date: "2024-03-19", booked: false },
-        { date: "2024-03-26", booked: false }
+        '2024-03-05',
+        '2024-03-08',
+        '2024-03-22'
       ]
     },
     {
@@ -23,10 +22,9 @@ const rooms = [
       benefits: ["Free Wi-Fi", "Complimentary breakfast", "Private balcony"],
       amenities: ["TV", "Air conditioning", "Mini fridge", "En-suite bathroom", "Bathtub"],
       bookings: [
-        { date: "2024-03-05", booked: true },
-        { date: "2024-03-12", booked: true },
-        { date: "2024-03-19", booked: false },
-        { date: "2024-03-26", booked: false }
+        '2024-03-05',
+        '2024-03-08',
+        '2024-03-22'
       ]
   
     },
@@ -39,10 +37,9 @@ const rooms = [
       benefits: ["Free Wi-Fi", "Complimentary breakfast", "Private balcony", "Access to executive lounge"],
       amenities: ["TV", "Air conditioning", "Mini fridge", "En-suite bathroom", "Bathtub", "Sofa"],
       bookings: [
-        { date: "2024-03-05", booked: true },
-        { date: "2024-03-12", booked: true },
-        { date: "2024-03-19", booked: false },
-        { date: "2024-03-26", booked: false }
+        '2024-03-05',
+        '2024-03-08',
+        '2024-03-22'
       ]
   
     },
@@ -55,11 +52,9 @@ const rooms = [
       benefits: ["Free Wi-Fi", "Complimentary breakfast", "Kids play area"],
       amenities: ["TV", "Air conditioning", "Mini fridge", "En-suite bathroom", "Bunk beds"],
       bookings: [
-        { date: "2024-03-03", booked: false },
-        { date: "2024-03-10", booked: false },
-        { date: "2024-03-17", booked: true },
-        { date: "2024-03-24", booked: true },
-        { date: "2024-03-31", booked: false }
+        '2024-03-05',
+        '2024-03-08',
+        '2024-03-22'
       ]
   
     },
@@ -72,11 +67,9 @@ const rooms = [
       benefits: ["Free Wi-Fi", "Complimentary breakfast", "Jacuzzi", "Champagne on arrival"],
       amenities: ["TV", "Air conditioning", "Mini fridge", "En-suite bathroom", "Jacuzzi"],
       bookings: [
-        { date: "2024-03-03", booked: false },
-        { date: "2024-03-10", booked: false },
-        { date: "2024-03-17", booked: true },
-        { date: "2024-03-24", booked: true },
-        { date: "2024-03-31", booked: false }
+        '2024-03-05',
+        '2024-03-08',
+        '2024-03-22'
       ]
   
     },
@@ -89,11 +82,9 @@ const rooms = [
       benefits: ["Free Wi-Fi", "Complimentary breakfast", "Private elevator access"],
       amenities: ["TV", "Air conditioning", "Mini fridge", "En-suite bathroom", "Panoramic windows", "Private terrace"],
       bookings: [
-        { date: "2024-03-03", booked: false },
-        { date: "2024-03-10", booked: false },
-        { date: "2024-03-17", booked: true },
-        { date: "2024-03-24", booked: true },
-        { date: "2024-03-31", booked: false }
+        '2024-03-05',
+        '2024-03-08',
+        '2024-03-22'
       ]
   
     },
@@ -106,11 +97,9 @@ const rooms = [
       benefits: [ "Complimentary breakfast"],
       amenities: ["Air conditioning", "Mini fridge", "En-suite bathroom"],
       bookings: [
-        { date: "2024-03-03", booked: false },
-        { date: "2024-03-10", booked: false },
-        { date: "2024-03-17", booked: true },
-        { date: "2024-03-24", booked: true },
-        { date: "2024-03-31", booked: false }
+        '2024-03-05',
+        '2024-03-08',
+        '2024-03-22'
       ]
   
     },
@@ -123,11 +112,9 @@ const rooms = [
       benefits: ["Free Wi-Fi", "Complimentary breakfast", "Kitchenette"],
       amenities: ["TV", "Air conditioning", "Kitchenette", "En-suite bathroom"],
       bookings: [
-        { date: "2024-03-03", booked: false },
-        { date: "2024-03-10", booked: false },
-        { date: "2024-03-17", booked: true },
-        { date: "2024-03-24", booked: true },
-        { date: "2024-03-31", booked: false }
+        '2024-03-05',
+        '2024-03-08',
+        '2024-03-22'
       ]
   
     },
@@ -140,11 +127,9 @@ const rooms = [
       benefits: ["Free Wi-Fi"],
       amenities: ["TV", "Fan", "Shared bathroom"],
       bookings: [
-        { date: "2024-03-03", booked: false },
-        { date: "2024-03-10", booked: false },
-        { date: "2024-03-17", booked: true },
-        { date: "2024-03-24", booked: true },
-        { date: "2024-03-31", booked: false }
+        '2024-03-05',
+        '2024-03-08',
+        '2024-03-22'
       ]
    
     },
@@ -157,10 +142,9 @@ const rooms = [
       benefits: ["Free Wi-Fi", "Complimentary breakfast", "Private pool", "Personal chef"],
       amenities: ["TV", "Air conditioning", "Mini fridge", "En-suite bathroom"],
       bookings: [
-        { date: "2024-03-05", booked: true },
-        { date: "2024-03-12", booked: true },
-        { date: "2024-03-19", booked: false },
-        { date: "2024-03-26", booked: false }
+        '2024-03-05',
+        '2024-03-08',
+        '2024-03-22'
       ]
   
     }
@@ -169,7 +153,7 @@ const rooms = [
 $(document).ready(function() {
     var roomDisplay = $('#roomList');
     for (var i = 0; i < 3; i++) {
-      var room = rooms[i];
+      room = rooms[i];
       var roomHtml = `
         <div class="mb-4">
           <div class="card col-md-5 mx-5">
@@ -187,3 +171,77 @@ $(document).ready(function() {
       roomDisplay.append(roomHtml);
     }
   });
+
+  $(document).ready(function() {
+    var roomDisplay = $('#listRoom');
+    for (var i = 0; i < 10; i++) {
+      room = rooms[i];
+      var roomHtml = `
+        <div class="mb-4">
+          <div class="card col-md-5 mx-5">
+          <img src="${room.image}" alt="${room.name} Room Image" height=200 width="auto"/>
+            <div class="card-body">
+              <h5 class="card-title">${room.name}</h5>
+              <p class="card-text">Description: ${room.description}</p>
+              <p class="card-text">Beds: ${room.beds}</p>
+              <p class="card-text">₱ ${room.price}</p>
+              <a href="#" class="btn btn-primary">Book Now!</a>
+            </div>
+          </div>
+        </div>
+      `;
+      roomDisplay.append(roomHtml);
+    }
+  });
+
+  function displayAvailableRooms() {
+    const checkinDate = new Date($('#checkin').val());
+    const checkoutDate = new Date($('#checkout').val());
+    
+    const availableRooms = rooms.filter(room => {
+      const availableDates = room.bookings.map(dateStr => new Date(dateStr));
+      for (let date = checkinDate; date <= checkoutDate; date.setDate(date.getDate() + 1)) {
+        if (!availableDates.find(availableDate => availableDate.getTime() === date.getTime())) {
+          return false;
+        }
+      }
+      return true;
+    });
+
+    const roomList = $('#roomList');
+    roomList.empty();
+    if (availableRooms.length === 0) {
+      roomList.append('<h1 class="fs-1 text-center my-5 py-5">No Available rooms on selected dates</h1>');
+    } else {
+      availableRooms.forEach(room => {
+        roomList.append(`<        <div class="mb-4">
+        <div class="card col-md-5 mx-5">
+        <img src="${room.image}" alt="${room.name} Room Image" height=200 width="auto"/>
+          <div class="card-body">
+            <h5 class="card-title">${room.name}</h5>
+            <p class="card-text">Description: ${room.description}</p>
+            <p class="card-text">Beds: ${room.beds}</p>
+            <p class="card-text">₱ ${room.price}</p>
+            <a href="#" class="btn btn-primary">Book Now!</a>
+          </div>
+        </div>
+      </div>`);
+      });
+    }
+  }
+
+  $(document).ready(function() {
+    $('#checkin, #checkout').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true,
+      startDate: new Date(),
+    });
+
+    displayAvailableRooms();
+
+    $('#filterBtn').click(function() {
+      displayAvailableRooms();
+    });
+  });
+
+  
