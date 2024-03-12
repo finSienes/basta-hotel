@@ -1,101 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html>
 <head>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 10px;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.codingnepalweb.com/demos/create-glassmorphism-login-form-html-css/hero-bg.jpg"), #000;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 400px;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+}
+
+.input-field label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.15s ease;
+}
+
+.input-field input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label {
+  font-size: 0.8rem;
+  top: 10px;
+  transform: translateY(-120%);
+}
+
+.forget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0 35px 0;
+  color: #fff;
+}
+
+#remember {
+  accent-color: #fff;
+}
+
+.forget label {
+  display: flex;
+  align-items: center;
+}
+
+.forget label p {
+  margin-left: 8px;
+}
+
+.wrapper a {
+  color: #efefef;
+  text-decoration: none;
+}
+
+.wrapper a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  color: #fff;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.register {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+</style>
+<script>
+function Login() {
+var username = document.getElementById('username').value;
+var password = document.getElementById('password').value;
+
+if (username === 'mendoza' && password === '222222') {
+location.href= 'Homescren.html';
+alert('Access Granted.');
+}else{
+alert('Access Denied.');
+}
+}
+
+ function saycancel() {
+ alert("Cancelled.")
+ }
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Utility Plus Hotel</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <title>Glassmorphism Login Form </title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="/img/utilitypluslogo.png" alt="Logo" width="auto" height="100"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="nav navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/Aboutus">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
-          <li class="nav-item"><a class="nav-link" href="/Contact">Contact</a></li>
-        </ul> 
+  <div class="wrapper">
+ 
+      <h2>login</h2>
+        <div class="input-field">
+  
+<p style="font-size:20px; color:white;">USERNAME</p> <label class="username" for="username"></label>
+  <input type="username" class ="username" type="username" id="username" placeholder="Enter your Username" />
       </div>
-    </div>
-  </nav>
-</header>
-    <div class="container-fluid img-bg text-center py-5">
-      <div class="cointainer py-5">
-        <h1 class="fs-5 fw-bold mb-2">Welcome to Utility Plus Hotel!</h1>
-        <p class="fs-1 mb-3">Your one stop to rest in peace.</p>
+      <div class="input-field">
+ <p style="font-size:20px; color:white;">PASSWORD <label class="password" for="password" ></label>
+    <input class="password" class ="password" type="password" id="password" placeholder="Enter your Password"/>
       </div>
-    </div>
-
-
-
-    <div class="container-fluid py-5 text-center ">
-        <h2 class="fw-bolder fs-1">Our Rooms</h2>
-        <p class="lead">Choose from a variety of room types that cater to your needs.</p>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
       </div>
-      <div> 
-        <div class=" container-fluid d-flex justify-content-around pt-5 flex-wrap" id="roomList"></div>
+ <br><br>
+ <b>
+ <button class="login"class="username" onclick="Login()">Login</button>
+ </b>
+ </p>
+      <div class="register">
+        <p>Don't have an account? <a href="#">Register</a></p>
       </div>
-     
-      <div class="bg-2 text-center my-5 py-5">
-        <i class="bi bi-file-earmark-person fs-1 display-1 lh-base"></i>
-        <h1 class="display-6 fw-normal">Make A Reservation Now</h1>
-        <a href="#contactForm" class="btn btn-outline-secondary btn-lg my-4">Reserve Now!</a>
-      </div>
-
-      <div class="container-fluid text-center my-5">
-        <h1>Menu</h1>
-        <div class="form-group">
-          <label for="category">Filter by Category:</label>
-          <select class="" id="category">
-            <option value="main" selected>Main</option>
-            <option value="drinks">Drinks</option>
-            <option value="dessert">Dessert</option>
-          </select>
-        </div>
-        <div id="menu" class="row mt-5 container-fluid">
-
-        </div>
-      </div>
-<div class="bg-info text-center">
-<h1 class="mt-5 pt-5 fs-1">See what our customers think!</h1>
-
-  <div class="container-fluid d-flex justify-content-around py-5 my-5 flex-wrap" id="reviews"></div>
-
-</div>
-
-
-
-
-      <div class="bG-black container-fluid">
-        <div class="container pb-5">
-          <ul class="list-unstyled d-flex justify-content-between align-items-center">
-            <li><i class="fa fa-map-marker me-3"></i>Kahit saan, sa pinas</li>
-            <li><i class="fa fa-phone ms-4"></i>+639123456789</li>
-            <li><i class="fa fa-envelope ms-4"></i>support@gmail.com</li>
-          </ul>
-          <hr>
-          </ul>
-        </div>
-      </div>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/rooms.js"></script>
-<script src="js/menu.js"></script>
-<script src="js/reviews.js"></script>
-<script src="js/rooms.js"></script>
-<script src="js/search.js"></script>
+    </form>
+  </div>
 </body>
 </html>

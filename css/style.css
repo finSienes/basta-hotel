@@ -1,11 +1,21 @@
 .img-bg{
     background-image: url('../img/bg1.jpg');
     background-position: center;
-    opacity: 80%;
     width: auto;
     height: 70vh;
     text-shadow: 1px 1px white;
     color:black;
+}
+
+.cta{
+    background-color: beige;
+    opacity: 70%;
+    width: auto;
+    height: 30em;
+}
+
+.butn{
+    color: white;
 }
 
 .date-bg{

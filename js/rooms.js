@@ -8,9 +8,9 @@ const rooms = [
       benefits: ["Free Wi-Fi", "Complimentary breakfast"],
       amenities: ["TV", "Air conditioning", "Mini fridge", "En-suite bathroom"],
       bookings: [
-        '2024-03-05',
-        '2024-03-08',
-        '2024-03-22'
+        '2024-04-01',
+        '2024-04-06',
+        '2024-04-10'
       ]
     },
     {
@@ -22,9 +22,9 @@ const rooms = [
       benefits: ["Free Wi-Fi", "Complimentary breakfast", "Private balcony"],
       amenities: ["TV", "Air conditioning", "Mini fridge", "En-suite bathroom", "Bathtub"],
       bookings: [
-        '2024-03-05',
-        '2024-03-08',
-        '2024-03-22'
+        '2024-04-02',
+        '2024-04-05',
+        '2024-04-15'
       ]
   
     },
@@ -37,9 +37,9 @@ const rooms = [
       benefits: ["Free Wi-Fi", "Complimentary breakfast", "Private balcony", "Access to executive lounge"],
       amenities: ["TV", "Air conditioning", "Mini fridge", "En-suite bathroom", "Bathtub", "Sofa"],
       bookings: [
-        '2024-03-05',
-        '2024-03-08',
-        '2024-03-22'
+        '2024-04-03',
+        '2024-04-14',
+        '2024-04-21'
       ]
   
     },
@@ -52,9 +52,9 @@ const rooms = [
       benefits: ["Free Wi-Fi", "Complimentary breakfast", "Kids play area"],
       amenities: ["TV", "Air conditioning", "Mini fridge", "En-suite bathroom", "Bunk beds"],
       bookings: [
-        '2024-03-05',
-        '2024-03-08',
-        '2024-03-22'
+        '2024-04-04',
+        '2024-04-12',
+        '2024-04-25'
       ]
   
     },
@@ -67,9 +67,9 @@ const rooms = [
       benefits: ["Free Wi-Fi", "Complimentary breakfast", "Jacuzzi", "Champagne on arrival"],
       amenities: ["TV", "Air conditioning", "Mini fridge", "En-suite bathroom", "Jacuzzi"],
       bookings: [
-        '2024-03-05',
-        '2024-03-08',
-        '2024-03-22'
+        '2024-04-05',
+        '2024-04-12',
+        '2024-04-22'
       ]
   
     },
@@ -82,9 +82,9 @@ const rooms = [
       benefits: ["Free Wi-Fi", "Complimentary breakfast", "Private elevator access"],
       amenities: ["TV", "Air conditioning", "Mini fridge", "En-suite bathroom", "Panoramic windows", "Private terrace"],
       bookings: [
-        '2024-03-05',
-        '2024-03-08',
-        '2024-03-22'
+        '2024-04-06',
+        '2024-04-16',
+        '2024-04-26'
       ]
   
     },
@@ -97,9 +97,9 @@ const rooms = [
       benefits: [ "Complimentary breakfast"],
       amenities: ["Air conditioning", "Mini fridge", "En-suite bathroom"],
       bookings: [
-        '2024-03-05',
-        '2024-03-08',
-        '2024-03-22'
+        '2024-04-07',
+        '2024-04-18',
+        '2024-03-30'
       ]
   
     },
@@ -112,9 +112,9 @@ const rooms = [
       benefits: ["Free Wi-Fi", "Complimentary breakfast", "Kitchenette"],
       amenities: ["TV", "Air conditioning", "Kitchenette", "En-suite bathroom"],
       bookings: [
-        '2024-03-05',
-        '2024-03-08',
-        '2024-03-22'
+        '2024-04-08',
+        '2024-04-31',
+        '2024-04-19'
       ]
   
     },
@@ -127,9 +127,9 @@ const rooms = [
       benefits: ["Free Wi-Fi"],
       amenities: ["TV", "Fan", "Shared bathroom"],
       bookings: [
-        '2024-03-05',
-        '2024-03-08',
-        '2024-03-22'
+        '2024-04-09',
+        '2024-04-19',
+        '2024-04-30'
       ]
    
     },
@@ -142,19 +142,19 @@ const rooms = [
       benefits: ["Free Wi-Fi", "Complimentary breakfast", "Private pool", "Personal chef"],
       amenities: ["TV", "Air conditioning", "Mini fridge", "En-suite bathroom"],
       bookings: [
-        '2024-03-05',
-        '2024-03-08',
-        '2024-03-22'
+        '2024-04-05',
+        '2024-04-08',
+        '2024-04-22'
       ]
   
     }
   ];
 
 $(document).ready(function() {
-    var roomDisplay = $('#roomList');
-    for (var i = 0; i < 3; i++) {
+    let roomDisplay = $('#homeRoom');
+    for (let i = 0; i < 3; i++) {
       room = rooms[i];
-      var roomHtml = `
+      let roomHtml = `
         <div class="mb-4">
           <div class="card col-md-5 mx-5">
           <img src="${room.image}" alt="${room.name} Room Image" height=200 width="auto"/>
@@ -163,7 +163,7 @@ $(document).ready(function() {
               <p class="card-text">Description: ${room.description}</p>
               <p class="card-text">Beds: ${room.beds}</p>
               <p class="card-text">₱ ${room.price}</p>
-              <a href="#" class="btn btn-primary">Book Now!</a>
+              <a href="contact.html" class="btn btn-primary">Book Now!</a>
             </div>
           </div>
         </div>
@@ -173,19 +173,21 @@ $(document).ready(function() {
   });
 
   $(document).ready(function() {
-    var roomDisplay = $('#listRoom');
-    for (var i = 0; i < 10; i++) {
+    let roomDisplay = $('#listRoom');
+    for (let i = 0; i < 10; i++) {
       room = rooms[i];
-      var roomHtml = `
+      let roomHtml = `
         <div class="mb-4">
           <div class="card col-md-5 mx-5">
           <img src="${room.image}" alt="${room.name} Room Image" height=200 width="auto"/>
             <div class="card-body">
               <h5 class="card-title">${room.name}</h5>
               <p class="card-text">Description: ${room.description}</p>
+              <p class="card-text">Benefits: ${room.benefits}</p>
+              <p class="card-text">Amenities: ${room.amenities}</p>
               <p class="card-text">Beds: ${room.beds}</p>
               <p class="card-text">₱ ${room.price}</p>
-              <a href="#" class="btn btn-primary">Book Now!</a>
+              <a href="contact.html" class="btn btn-primary">Book Now!</a>
             </div>
           </div>
         </div>
@@ -220,9 +222,11 @@ $(document).ready(function() {
           <div class="card-body">
             <h5 class="card-title">${room.name}</h5>
             <p class="card-text">Description: ${room.description}</p>
+            <p class="card-text">Benefits: ${room.benefits}</p>
+            <p class="card-text">Amenities: ${room.amenities}</p>
             <p class="card-text">Beds: ${room.beds}</p>
             <p class="card-text">₱ ${room.price}</p>
-            <a href="#" class="btn btn-primary">Book Now!</a>
+            <a href="contact.html" class="btn btn-primary">Book Now!</a>
           </div>
         </div>
       </div>`);
