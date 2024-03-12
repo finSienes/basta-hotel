@@ -1,9 +1,9 @@
-var form = document.getElementById("reservationForm");
+let form = document.getElementById("reservationForm");
     
 async function handleSubmit(event) {
   event.preventDefault();
-  var status = document.getElementById("my-form-status");
-  var data = new FormData(event.target);
+  let status = document.getElementById("my-form-status");
+  let data = new FormData(event.target);
   fetch(event.target.action, {
     method: form.method,
     body: data,
