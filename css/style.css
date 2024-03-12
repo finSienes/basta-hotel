@@ -1,5 +1,5 @@
 .img-bg{
-    background-image: url('../img/bg1.jpg');
+    background-image: url('https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/416306216_328681946820432_4207923206750841667_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGDkszS4xaHYiPgHE11jk3kfHkKiFv0L3F8eQqIW_QvcSdiDaWeERUoLkP9QU8kryPrSzRJlhUy6nPa2MoOxwDe&_nc_ohc=scq7JGgTwBsAX_ASbSz&_nc_ht=scontent.fmnl17-3.fna&oh=03_AdRgFYIwb2J4J8E6K4UFEmB9lppIpqh77LO-hBJYsy_kFw&oe=66181746');
     background-position: center;
     width: auto;
     height: 70vh;
@@ -29,7 +29,7 @@
 }
 
 .bg-2{
-    background-image: url('../img/pexels-james-wheeler-414612.jpg');
+    background-image: url('https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/416562336_1141592977202188_3875332237024646255_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHqQL5p7aLbau-to_oTTQLaAjZUhKQLfBUCNlSEpAt8FX_YwoxxmHHCS9auk6G_X237VqA1kt1M1wuqzEPsZPjI&_nc_ohc=K4PVXvsqLJkAX9VnvqR&_nc_ht=scontent.fmnl17-3.fna&oh=03_AdSUDXwRF_HD1rb98aYM3hqVls20hCXbdMeSf5NvtP6Hxw&oe=6618079F');
     background-position: top center;
     width: auto;
     height: auto;
